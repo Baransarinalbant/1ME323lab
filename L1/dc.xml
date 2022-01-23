@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE superheromovies SYSTEM "filmer.dtd"> 
+   
+<superheromovies>
+
+    <movie>
+        <name>
+            <caption>Joker</caption>
+        </name>
+        <when>
+            <year>2019</year>
+        </when>
+        <length>
+            <minutes>2h 2m</minutes>
+        </length>
+        <description url="https://www.imdb.com/title/tt7286456/?ref_=nv_sr_srsg_0" />
+        <imdb>
+            <points>8,4/10</points>
+        </imdb>
+    </movie>
+
+    <movie>
+        <name>
+            <caption>Wonder Woman 1984</caption>
+        </name>
+        <when>
+            <year>2020</year>
+        </when>
+        <length>
+            <minutes>2h 31m</minutes>
+        </length>
+        <description url="https://www.imdb.com/title/tt7126948/?ref_=nv_sr_srsg_0" />
+        <imdb>
+            <points>5,4/10</points>
+        </imdb>
+    </movie>
+
+    <movie>
+        <name>
+            <caption>Batman v Superman: Dawn of Justice</caption>
+        </name>
+        <when>
+            <year>2016</year>
+        </when>
+        <length>
+            <minutes>2h 32m</minutes>
+        </length>
+        <description url="https://www.imdb.com/title/tt2975590/?ref_=nv_sr_srsg_0" />
+        <imdb>
+            <points>6,4/10</points>
+        </imdb>
+    </movie>
+
+    <movie>
+        <name>
+            <caption>The Suicide Squad</caption>
+        </name>
+        <when>
+            <year>2021</year>
+        </when>
+        <length>
+            <minutes>2h 12m</minutes>
+        </length>
+        <description url="https://www.imdb.com/title/tt6334354/?ref_=nv_sr_srsg_0" />
+        <imdb>
+            <points>7,2/10</points>
+        </imdb>
+    </movie>
+
+</superheromovies>
