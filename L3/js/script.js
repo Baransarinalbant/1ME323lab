@@ -38,24 +38,24 @@ function listLinks() {
 // Den kurs användaren klickat på, läggs in överst i kurslistan.
 function addCourse() {
 
-	let checkElem = courseListElem.querySelectorAll("p");
-	for (let i = 0; i < checkElem.length; i++) {
-	if (checkElem[i].innerHTML == this.innerHTML)
+	let checkElem = courseListElem.querySelectorAll("p");    // lokal variabel för p element
+	for (let i = 0; i < checkElem.length; i++) {	//lopp som går igenom check elem
+	if (checkElem[i].innerHTML == this.innerHTML)   //kontrollerar om checkelem är lika med this
 	return;
 	}
-	let newText = document.createElement("p");
-	let textNode = document.createTextNode(this.innerHTML);
+	let newText = document.createElement("p");     // skapar ett nytt p element
+	let textNode = document.createTextNode(this.innerHTML);    // ny textnode
 	newText.appendChild(textNode);
 	courseListElem.appendChild(newText);
 	courseListElem.insertBefore(newText, courseListElem.childNodes[0]);
-	newText.style.cursor = "pointer";
-	newText.addEventListener("click", removeCourse);
+	newText.style.cursor = "pointer";	
+	newText.addEventListener("click", removeCourse);    // aktiverar removecourse funktionen vid klick
 	
 } // End addCourse
 
 // Den kurs användaren klickat på i kurslistan, tas bort.
 function removeCourse() {
-	courseListElem.removeChild(this);
+	courseListElem.removeChild(this);    // tar bort den kursen det klickas på 
 	
 	//courseListElem.removeChild(this.childNodes[0]);
 	
