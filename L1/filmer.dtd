@@ -14,14 +14,9 @@ superheromovies
 -->
 
 <!ELEMENT superheromovies (movie+)>
-    <!ELEMENT movie (name, when, length, description, imdb)>
-        <!ELEMENT name (caption)>
-            <!ELEMENT caption (#PCDATA)>
-        <!ELEMENT when (year)>
-            <!ELEMENT year (#PCDATA)>
-        <!ELEMENT length (minutes)>
-            <!ELEMENT minutes (#PCDATA)>
-        <!ELEMENT description EMPTY>
-            <!ATTLIST description url CDATA #REQUIRED>
-        <!ELEMENT imdb (points)>
-            <!ELEMENT points (#PCDATA)>
+    <!ELEMENT movie (name, when, length, imdb)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT when (#PCDATA)>
+        <!ELEMENT length (#PCDATA)>
+        <!ELEMENT imdb EMPTY>
+            <!ATTLIST imdb url CDATA #REQUIRED>

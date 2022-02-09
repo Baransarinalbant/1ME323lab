@@ -4,67 +4,31 @@
 <superheromovies>
 
     <movie>
-        <name>
-            <caption>Hellboy</caption>
-        </name>
-        <when>
-            <year>2019</year>
-        </when>
-        <length>
-            <minutes>2h</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt2274648/?ref_=nv_sr_srsg_3" />
-        <imdb>
-            <points>5,2/10</points>
-        </imdb>
+        <name>Hellboy</name>
+        <when>2019</when>
+        <length>2h</length>
+        <imdb url="https://www.imdb.com/title/tt2274648/?ref_=nv_sr_srsg_3" />
     </movie>
 
     <movie>
-        <name>
-            <caption>The Incredibles</caption>
-        </name>
-        <when>
-            <year>2004</year>
-        </when>
-        <length>
-            <minutes>1h 55m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt0317705/?ref_=nv_sr_srsg_3"/>
-        <imdb>
-            <points>8,0/10</points>
-        </imdb>
+        <name>The Incredibles</name>
+        <when>2004</when>
+        <length>1h 55m</length>
+        <imdb url="https://www.imdb.com/title/tt0317705/?ref_=nv_sr_srsg_3"/>
     </movie>
 
     <movie>
-        <name>
-            <caption>Teenage Mutant Ninja Turtles</caption>
-        </name>
-        <when>
-            <year>2014</year>
-        </when>
-        <length>
-            <minutes>1h 41m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt1291150/?ref_=nv_sr_srsg_6" />
-        <imdb>
-            <points>5,8/10</points>
-        </imdb>
+        <name>Teenage Mutant Ninja Turtles</name>
+        <when>2014</when>
+        <length>1h 41m</length>
+        <imdb url="https://www.imdb.com/title/tt1291150/?ref_=nv_sr_srsg_6" />
     </movie>
 
     <movie>
-        <name>
-            <caption>Dredd</caption>
-        </name>
-        <when>
-            <year>2012</year>
-        </when>
-        <length>
-            <minutes>1h 35m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt1343727/?ref_=nv_sr_srsg_0" />
-        <imdb>
-            <points>7,1/10</points>
-        </imdb>
+        <name>Dredd</name>
+        <when>2012</when>
+        <length>1h 35m</length>
+        <imdb url="https://www.imdb.com/title/tt1343727/?ref_=nv_sr_srsg_0" />
     </movie>
 
 </superheromovies>

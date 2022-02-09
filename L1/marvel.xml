@@ -4,67 +4,31 @@
 <superheromovies>
 
     <movie>
-        <name>
-            <caption>Spiderman: No Way Home</caption>
-        </name>
-        <when>
-            <year>2021</year>
-        </when>
-        <length>
-            <minutes>2h 28m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt10872600/" />
-        <imdb>
-            <points>8,7/10</points>
-        </imdb>
+        <name>Spiderman: No Way Home</name>
+        <when>2021</when>
+        <length>2h 28m</length>
+        <imdb url="https://www.imdb.com/title/tt10872600/" />
     </movie>
 
     <movie>
-        <name>
-            <caption>Doctor Strange</caption>
-        </name>
-        <when>
-            <year>2016</year>
-        </when>
-        <length>
-            <minutes>1h 55m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt1211837/?ref_=fn_al_tt_1" />
-        <imdb>
-            <points>7,5/10</points>
-        </imdb>
+        <name>Doctor Strange</name>
+        <when>2016</when>
+        <length>1h 55m</length>
+        <imdb url="https://www.imdb.com/title/tt1211837/?ref_=fn_al_tt_1" />
     </movie>
 
     <movie>
-        <name>
-            <caption>Captain America: The First Avenger</caption>
-        </name>
-        <when>
-            <year>2011</year>
-        </when>
-        <length>
-            <minutes>2h 4m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt0458339/?ref_=fn_al_tt_3" />
-        <imdb>
-            <points>6,9/10</points>
-        </imdb>
+        <name>Captain America: The First Avenger</name>
+        <when>2011</when>
+        <length>2h 4m</length>
+        <imdb url="https://www.imdb.com/title/tt0458339/?ref_=fn_al_tt_3" />
     </movie>
 
     <movie>
-        <name>
-            <caption>Thor</caption>
-        </name>
-        <when>
-            <year>2011</year>
-        </when>
-        <length>
-            <minutes>1h 55m</minutes>
-        </length>
-        <description url="https://www.imdb.com/title/tt0800369/?ref_=fn_al_tt_1" />
-        <imdb>
-            <points>7,0/10</points>
-        </imdb>
+        <name>Thor</name>
+        <when>2011</when>
+        <length>1h 55m</length>
+        <imdb url="https://www.imdb.com/title/tt0800369/?ref_=fn_al_tt_1" />
     </movie>
 
 </superheromovies>
