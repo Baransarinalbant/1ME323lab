@@ -24,8 +24,8 @@ function MyObject(id) {
 		imgUrls: ["img/blank.png"],	
 		imgCaptions: [""]
 	};
-	this.imgIx = 0;		//
-	this.timer = null;	//
+	this.imgIx = 0;	
+	this.timer = null;
 }
 
 // Gör ett Ajax-anrop för att läsa in begärd fil
@@ -47,34 +47,15 @@ MyObject.prototype.requestImages = function (file) { // Parametern nr används i
 MyObject.prototype.getImages = function (JSONtext) { // Parametern XMLcode är hela den inlästa XML-koden
 	let image = JSON.parse(JSONtext).image;			//Lokal variabel för image
 	this.titleElem.innerHTML = JSON.parse(JSONtext).category;
-
 	this.list.imgUrls = [];		// Nya tomma arrayer för bilder
 	this.list.imgCaptions = [];
-
 	for (let i = 0; i < image.length; i++) {
 		// Referenser till olika egenskaper i aktuellt accomodation-objekt
-
 		this.list.imgUrls.push(image[i].url);
 		this.list.imgCaptions.push(image[i].caption);
-		
-		
 	}
 	this.imgIx = 0;
 	this.showImage(); // Visa första bilden
-	
-/*	this.titleElem.innerHTML = XMLcode.getElementsByTagName("category")[0].firstChild.data;
-	let urlElems = XMLcode.getElementsByTagName("url"); // Alla url-element
-	let captionElems = XMLcode.getElementsByTagName("caption"); // Alla caption-element
-	this.list.imgUrls = [];		// Nya tomma arrayer för bilder
-	this.list.imgCaptions = [];	// och bildtexter
-	// Går igenom urlElems och pushar in bilden och texten
-	for (let i = 0; i < urlElems.length; i++) {
-		this.list.imgUrls.push(urlElems[i].firstChild.data);
-		this.list.imgCaptions.push(captionElems[i].firstChild.data);
-	}
-	this.imgIx = 0;
-	this.showImage(); // Visa första bilden
-	/*/
 } // End getImages
 
 // Visa bilden med index imgIx

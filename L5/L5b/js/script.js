@@ -11,6 +11,7 @@ function init() {
 } // End init
 window.addEventListener("load",init);
 
+// Väljer marvel filen
 function selectMovies() {
 	let marvel = this.value; // Land i vald knapp
 	requestData(marvel);
@@ -20,7 +21,7 @@ function selectMovies() {
 // Gör ett Ajax-anrop för att läsa in begärd fil
 function requestData(filename) { // filname är namnet (utan ändelse) på den fil som ska hämtas
 	let request = new XMLHttpRequest(); // Object för Ajax-anropet
-	request.open("GET","data/marvel.json",true);
+	request.open("GET","data/" + filename + ".json",true);
 	request.send(null); // Skicka begäran till servern
 	request.onreadystatechange = function () { // Funktion för att avläsa status i kommunikationen
 		if (request.readyState == 4) // readyState 4 --> kommunikationen är klar
@@ -32,16 +33,15 @@ function requestData(filename) { // filname är namnet (utan ändelse) på den f
 
 // Tolka XML-koden och skriv ut på önskad form
 function getData(JSONtext) {
-	let movies = JSON.parse(JSONtext).movies; // Listan (array) accommodation
+	let movies = JSON.parse(JSONtext).movies; // Listan (array) movies
 	let HTMLcode = ""; // Sträng med HTML-kod som skapas
 	for (let i = 0; i < movies.length; i++) {
-		// Referenser till olika egenskaper i aktuellt accomodation-objekt
-		//let name = movies[i].name;
+		// Skriver ut olika egenskaperna i filmerna
 		HTMLcode += 
             "<p><b>Namn:</b> " + movies[i].name + "</p>" +
 			"<p><b>Årtal:</b> " + movies[i].when + "</p>" +
 			"<p><b>Längd:</b> " + movies[i].length + "</p>" +
-			"<b>Längd:</b>" + " <a href=>" + movies[i].imdb + "</a>" +
+			"<b>imdb: </b>" + "<a href=" + movies[i].imdb + ">Tryck här</a>" +
 			"<hr>";
 	}
 	resElem.innerHTML = HTMLcode;
