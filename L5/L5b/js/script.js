@@ -41,7 +41,7 @@ function getData(JSONtext) {
             "<p><b>Namn:</b> " + movies[i].name + "</p>" +
 			"<p><b>Årtal:</b> " + movies[i].when + "</p>" +
 			"<p><b>Längd:</b> " + movies[i].length + "</p>" +
-			"<b>imdb: </b>" + "<a href=" + movies[i].imdb + ">Tryck här</a>" +
+			"<b>imdb: </b>" + "<a href=" + movies[i].imdb.url + ">Tryck här</a>" +
 			"<hr>";
 	}
 	resElem.innerHTML = HTMLcode;

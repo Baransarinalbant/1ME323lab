@@ -1,28 +1,36 @@
 {
-    "movies": [
+    "movie": [
         {
             "name": "Spiderman: No Way Home",
             "when": "2021",
             "length": "2h 28m",
-            "imdb": "https://www.imdb.com/title/tt10872600/"
+            "imdb": {
+                "url": "https://www.imdb.com/title/tt10872600/"
+            }
         },
         {
             "name": "Doctor Strange",
             "when": "2016",
             "length": "1h 55m",
-            "imdb": "https://www.imdb.com/title/tt1211837/?ref_=fn_al_tt_1"
+            "imdb": {
+                "url": "https://www.imdb.com/title/tt1211837/?ref_=fn_al_tt_1"
+            }
         },
         {
             "name": "Captain America: The First Avenger",
             "when": "2011",
             "length": "2h 4m",
-            "imdb": "https://www.imdb.com/title/tt0458339/?ref_=fn_al_tt_3"
+            "imdb": {
+               "url": "https://www.imdb.com/title/tt0458339/?ref_=fn_al_tt_3"
+            }
         },
         {
             "name": "Thor",
             "when": "2011",
             "length": "1h 55m",
-            "imdb": "https://www.imdb.com/title/tt0800369/?ref_=fn_al_tt_1"
+            "imdb": {
+                "url": "https://www.imdb.com/title/tt0800369/?ref_=fn_al_tt_1"
+            }
         }
     ]
 }
