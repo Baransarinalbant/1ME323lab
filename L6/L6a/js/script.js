@@ -63,7 +63,7 @@ function newImgs(response) {
 		newElem.setAttribute("src",imgUrl);   // Nytt src attribut på newElem
 		newElem.setAttribute("data-photo",JSON.stringify(photo)); // Spara data om fotot
 		newElem.addEventListener("click",enlargeImg); // Lägger in händelsehanterare när man clickar blir bilden stor
-		flickrImgElem.appendChild(newElem);	// Lögger in newElem i flickimgelem med appendchild
+		flickrImgElem.appendChild(newElem);	// Lägger in newElem i flickrimgelem med appendchild
 	} // End for
 } // End newImgs
 

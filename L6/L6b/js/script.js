@@ -15,12 +15,12 @@ var flickrImgElem;				// Referens till element där bilderna ska visas
 
 // Initiering av programmet
 function init() {
-	myMarkers = [];
+	myMarkers = [];   // Tom array
 	var buttons = document.getElementById("addrBtns").getElementsByTagName("button");  // Sparar knapparna i addrBtns i varibeln buttons
 	
 	initMap();
-	mapLocationElem = document.getElementById("mapLocation");
-	flickrImgElem = document.getElementById("flickrImg");
+	mapLocationElem = document.getElementById("mapLocation");  // Sparar mapLocation i mapLocationElem
+	flickrImgElem = document.getElementById("flickrImg");	// Sparar flickrImg i flickrImgElem
 
 	
 
@@ -59,16 +59,16 @@ function initMap() {
 // Sätt markerns position till var användaren klickade och lägg in markern på kartan.
 function newUserMarker(e) {
 	hideMarkers();  // Anropar funktionen hidemarkers
-	userMarker = new google.maps.Marker();
-	userMarker.setPosition(e.latLng);
-	userMarker.setMap(myMap);
+	userMarker = new google.maps.Marker();	// Lägger till en markering
+	userMarker.setPosition(e.latLng);	// Sätter ut en plats 
+	userMarker.setMap(myMap);	// Lägger ut platsen på kartan
 	mapLocationElem.innerHTML = "Latitud: " + e.latLng.lat() + " Longitud: " + e.latLng.lng();  //Skriver ut kortdinaterna där användaren klickar
 } // End newUserMarker
 
 // Visa marker för den adressknapp som användaren klickat på
 function showAddrMarker() {
 
-	hideMarkers();
+	hideMarkers();   // Anrop till funktionen hideMarkers
 	myMarkers[this.getAttribute("data-ix")].setMap(myMap);
 	
 } // End showAddrMarker
