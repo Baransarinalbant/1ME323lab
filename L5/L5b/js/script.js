@@ -3,10 +3,10 @@ var resElem;	// Referens till elementet för resultat
 
 // Initiering av globala variabler och händelsehanterare.
 function init() {
-	resElem = document.getElementById("result");
-	let btnElems = document.getElementById("movieButtons").getElementsByTagName("button");
+	resElem = document.getElementById("result");	// referens till result
+	let btnElems = document.getElementById("movieButtons").getElementsByTagName("button");	// referens till button
 	for (let i = 0; i < btnElems.length; i++) {
-		btnElems[i].addEventListener("click",selectMovies);
+		btnElems[i].addEventListener("click",selectMovies);	// Händelsehanterare på knappen aktiverar selectmovies
 	}
 } // End init
 window.addEventListener("load",init);
@@ -21,7 +21,7 @@ function selectMovies() {
 // Gör ett Ajax-anrop för att läsa in begärd fil
 function requestData(filename) { // filname är namnet (utan ändelse) på den fil som ska hämtas
 	let request = new XMLHttpRequest(); // Object för Ajax-anropet
-	request.open("GET","data/" + filename + ".json",true);
+	request.open("GET","data/" + filename + ".json",true);	
 	request.send(null); // Skicka begäran till servern
 	request.onreadystatechange = function () { // Funktion för att avläsa status i kommunikationen
 		if (request.readyState == 4) // readyState 4 --> kommunikationen är klar
@@ -44,5 +44,5 @@ function getData(JSONtext) {
 			"<b>imdb: </b>" + "<a href=" + movies[i].imdb.url + ">Tryck här</a>" +
 			"<hr>";
 	}
-	resElem.innerHTML = HTMLcode;
+	resElem.innerHTML = HTMLcode;   // Skriver ut texten i resElem
 } // End getData

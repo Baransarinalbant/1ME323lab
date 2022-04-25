@@ -6,8 +6,8 @@ function init() {
 		myImage.requestImages("json/images" + this.selectedIndex + ".json");
 		this.selectedIndex = 0;
 	});
-	document.querySelector("#prevBtn").addEventListener("click",function() {myImage.prevImage();});
-	document.querySelector("#nextBtn").addEventListener("click",function() {myImage.nextImage();});
+	document.querySelector("#prevBtn").addEventListener("click",function() {myImage.prevImage();});	// Händelsehanterare för tillbaka knappen
+	document.querySelector("#nextBtn").addEventListener("click",function() {myImage.nextImage();});	// Händelsehanterare för nästa knappen
 	
 } // End init
 window.addEventListener("load",init);
@@ -21,11 +21,11 @@ function ImageViewer(id) {
 	this.imgElem = document.querySelector("#" + id + " img");	// Id för bilden
 	this.captionElem = document.querySelector("#" + id + " p");	// Id för texten
 	this.list = [{
-		imgUrls: ["img/blank.png"],	
-		imgCaptions: [""]
+		imgUrls: ["img/blank.png"],		// Tom bild
+		imgCaptions: [""]	// Tom stäng för bild titeln
 	}];
-	this.imgIx = 0;	
-	this.timer = null;
+	this.imgIx = 0;		
+	this.timer = null;		
 }
 
 // Gör ett Ajax-anrop för att läsa in begärd fil
